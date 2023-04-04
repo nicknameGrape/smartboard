@@ -1,11 +1,79 @@
 <html>
 	<head>
+		<title>Smartboard Hub</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<style>
+body {
+	font-size: 4vh;
+	font-family: sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+a iframe {
+	pointer-events: none;
+}
+a img {
+	border: solid blue;
+}
+#splash {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#hub {
+	width: 100%;
+	height: 80%;
+	display: flex;
+}
+.item {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.itemLink {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.itemAbout {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#date {
+	background: pink;
+}
+#pointing_game {
+	background: yellow;
+}
+		</style>
 	</head>
 	<body>
-		<h1>The Smartboard Hub</h1>
-		<ul>
-			<li><a href="https://nicknameGrape.github.io/date/">Date and Time</a></li>
-			<li><a href="https://nicknameGrape.github.io/pointing_game/">Pointing Game</a></li>
-		</ul>
+		<div id="splash">
+			<h1>The Smartboard Hub</h1>
+		</div>
+		<div id="hub">
+			<div class="item" id="date">
+				<a class="itemLink" href="https://nicknameGrape.github.io/date/">
+					<h2>Date and Time</h2>
+					<iframe src="https://nicknameGrape.github.io/date/" width="300px" height="200px"></iframe>
+				</a>
+			</div>
+			<div class="item" id="pointing_game">
+				<a class="itemLink" href="https://nicknameGrape.github.io/pointing_game/">
+					<h2>Pointing Game</h2>
+					<img src="pointing_game_screenshot.png" width="300px" height="200px"></iframe>
+				</a>
+			</div>
+		</div>
 	</body>
 </html>
