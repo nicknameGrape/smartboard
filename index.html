@@ -1,87 +1,48 @@
-<html>
+<!DOCTYPE html>
 	<head>
 		<title>Smartboard Hub</title>
 		<link rel="icon" type="image/png" href="favicon.png">
 		<style>
 body {
-	font-size: 4vh;
-	font-family: sans-serif;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	margin: 0px;
-}
-a iframe {
-	pointer-events: none;
-	width: 50%;
-	height: 40%;
-}
-a img {
-	border: solid blue;
-	justify-content: center;
-	box-sizing: border-box;
-	width: 50%;
-	height: 40%;
+	font-size: 5vh;
+	font-family: sans-serif;
 }
 #splash {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding-left: 20px;
 }
 #hub {
-	width: 100%;
-	height: 80%;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-}
-.item {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 .itemLink {
-	box-sizing: border-box;
-	padding: 5%;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	padding-left: 20px;
 }
-.itemTitle {
-	width: 100%;
-	height: 20%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-.itemDisplay {
-	width: 100%;
-	height: 40%;
-}
-.itemAbout {
-	width: 100%;
-	height: 30%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.new {
+	font-weight: bold;
+	color: black;
+	text-shadow: white 2px 2px;
 }
 #date {
-	background: hotpink;
+	background: skyBlue;
 }
 #timer_stopwatch {
-	background: lightBlue;
+	background: lightGreen;
 }
 #lottery {
-	background: lightgray;
+	background: red;
+	color: yellow;
 }
 #pointing_game {
 	background: yellow;
 }
 #spelling {
+	background: gray;
+	color: white;
+}
+#scrambled_sentences {
 	background: tan;
 }
 		</style>
@@ -96,40 +57,14 @@ a img {
 		gtag('config', 'G-C5MPB2T6KH');
 	</script>
 	<body>
-		<div id="splash">
-			<h1>The Smartboard Hub</h1>
-		</div>
+		<h1 id="splash">The Smartboard Hub</h1>
 		<div id="hub">
-			<div class="item" id="date">
-				<a class="itemLink" href="https://nicknameGrape.github.io/date/">
-					<div class="itemTitle">Date and Time</div>
-					<iframe class="itemDisplay" src="https://nicknameGrape.github.io/date/"></iframe>
-				</a>
-			</div>
-			<div class="item" id="timer_stopwatch">
-				<a class="itemLink" href="https://nicknameGrape.github.io/timer_stopwatch/">
-					<div class="itemTitle">Timer/Stopwatch</div>
-					<img class="itemDisplay" src="timer_stopwatch_screenshot.png"></iframe>
-				</a>
-			</div>
-			<div class="item" id="lottery">
-				<a class="itemLink" href="https://nicknameGrape.github.io/lottery/">
-					<div class="itemTitle">Student Number<br>Lottery</div>
-					<iframe class="itemDisplay" src="https://nicknameGrape.github.io/lottery/"></iframe>
-				</a>
-			</div>
-			<div class="item" id="pointing_game">
-				<a class="itemLink" href="https://nicknameGrape.github.io/pointing_game/">
-					<div class="itemTitle">Pointing Game</div>
-					<img class="itemDisplay" src="pointing_game_screenshot.png"></iframe>
-				</a>
-			</div>
-			<div class="item" id="spelling">
-				<a class="itemLink" href="https://nicknameGrape.github.io/spelling/">
-					<div class="itemTitle">Spelling Practice</div>
-					<iframe class="itemDisplay" src="https://nicknameGrape.github.io/spelling/"></iframe>
-				</a>
-			</div>
+				<a id="date" class="itemLink" href="https://nicknameGrape.github.io/date/">Date and Time</a>
+				<a id="lottery" class="itemLink" href="https://nicknameGrape.github.io/lottery/">Student Number Lottery</a>
+				<a id="spelling" class="itemLink" href="https://nicknameGrape.github.io/spelling/">Spelling Practice</a>
+				<a id="timer_stopwatch" class="itemLink" href="https://nicknameGrape.github.io/timer_stopwatch/">Timer/Stopwatch</a>
+				<a id="pointing_game" class="itemLink" href="https://nicknameGrape.github.io/pointing_game/">Pointing Game</a>
+				<a id="scrambled_sentences" class="itemLink" href="https://nicknameGrape.github.io/scrambled_sentences/">Scrambled Sentences <em class="new">New!</em></a>
 		</div>
 	</body>
 </html>
