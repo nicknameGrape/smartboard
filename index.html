@@ -18,7 +18,12 @@ body {
 	flex-direction: column;
 }
 .itemLink {
+	display: flex;
 	padding-left: 20px;
+}
+.icon {
+	height: 8vh;
+	margin: .5vh;
 }
 .new {
 	font-weight: bold;
@@ -59,12 +64,30 @@ body {
 	<body>
 		<h1 id="splash">The Smartboard Hub</h1>
 		<div id="hub">
-				<a id="date" class="itemLink" href="https://nicknameGrape.github.io/date/">Date and Time</a>
-				<a id="lottery" class="itemLink" href="https://nicknameGrape.github.io/lottery/">Student Number Lottery</a>
-				<a id="spelling" class="itemLink" href="https://nicknameGrape.github.io/spelling/">Spelling Practice</a>
-				<a id="timer_stopwatch" class="itemLink" href="https://nicknameGrape.github.io/timer_stopwatch/">Timer/Stopwatch</a>
-				<a id="pointing_game" class="itemLink" href="https://nicknameGrape.github.io/pointing_game/">Pointing Game</a>
-				<a id="scrambled_sentences" class="itemLink" href="https://nicknameGrape.github.io/scrambled_sentences/">Scrambled Sentences <em class="new">New!</em></a>
+				<a id="date" class="itemLink" href="https://nicknameGrape.github.io/date/">
+					<img class="icon" src="date_time.png"/>
+					<span>Date and Time</span>
+				</a>
+				<a id="timer_stopwatch" class="itemLink" href="https://nicknameGrape.github.io/timer_stopwatch/">
+					<img class="icon" src="time_stopwatch_bomb.png"/>
+					<span>Timer/Stopwatch/Time Bomb</span>
+				</a>
+				<a id="lottery" class="itemLink" href="https://nicknameGrape.github.io/lottery/">
+					<img class="icon" src="kuji.png"/>
+					<span>Student Number Lottery</span>
+				</a>
+				<a id="spelling" class="itemLink" href="https://nicknameGrape.github.io/spelling/">
+					<img class="icon" src="p-i-g_pig.png"/>
+					<span>Spelling Practice</span>
+				</a>
+				<a id="pointing_game" class="itemLink" href="https://nicknameGrape.github.io/pointing_game/">
+					<img class="icon" src="pointing_game.png"/>
+					<span>Pointing Game</span>
+				</a>
+				<a id="scrambled_sentences" class="itemLink" href="https://nicknameGrape.github.io/scrambled_sentences/">
+					<img class="icon" src="scrambled_sentences.png"/>
+					<span>Scrambled Sentences</span>
+				</a>
 		</div>
 	</body>
 </html>
