@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 	<head>
-		<title>Smartboard Hub</title>
+		<title>ALT Tools Hub</title>
 		<link rel="icon" type="image/png" href="favicon.png">
 		<style>
 body {
-	width: 100vw;
-	height: 100vh;
 	margin: 0px;
 	font-size: 5vh;
 	font-family: sans-serif;
+	overflow: auto;
 }
 #splash {
 	padding-left: 20px;
@@ -19,7 +18,14 @@ body {
 }
 .itemLink {
 	display: flex;
+	align-items: center;
 	padding-left: 20px;
+	text-decoration: none;
+}
+.usage {
+	margin: 5px;
+	padding-left: 30px;
+	font-size: 2vh;
 }
 .icon {
 	height: 8vh;
@@ -65,35 +71,59 @@ body {
 		gtag('config', 'G-C5MPB2T6KH');
 	</script>
 	<body>
-		<h1 id="splash">The Smartboard Hub</h1>
+		<h2 id="splash">The Classroom Tools Hub for ALTs</h2>
 		<div id="hub">
 				<a id="date" class="itemLink" href="https://nicknameGrape.github.io/date/">
 					<img class="icon" src="date_time.png"/>
-					<span>Date and Time</span>
+					<span>Current Time, Date and Weather*</span>
+					<span class="usage">At the start of the lesson, display the current time and date.<br>
+					*Weather must be selected manually :)</span>
 				</a>
 				<a id="timer_stopwatch" class="itemLink" href="https://nicknameGrape.github.io/timer_stopwatch/">
 					<img class="icon" src="time_stopwatch_bomb.png"/>
 					<span>Timer/Stopwatch/Time Bomb</span>
+					<span class="usage">Provides a convenient timer and stopwatch.<br>
+						The "Time Bomb" is a random-length timer.<br>
+						<span style="background: orange">Caution: the alarm is rather loud!</span>
+					</span>
 				</a>
 				<a id="lottery" class="itemLink" href="https://nicknameGrape.github.io/lottery/">
 					<img class="icon" src="kuji.png"/>
 					<span>Student Number Lottery</span>
+					<span class="usage">Choose a student at random by their "student number".</span>
 				</a>
 				<a id="spelling" class="itemLink" href="https://nicknameGrape.github.io/spelling/">
 					<img class="icon" src="p-i-g_pig.png"/>
 					<span>Spelling Practice</span>
+					<span class="usage">Start spelling one of 500+ common English words (nouns).<br>
+						The spelling will autocomplete and display a picture.<br>
+						Feel free to download and print the reading practice cards (mini picture dictionaries).<br>
+						<span style="background: orange; color: purple">Note: Does not accept keyboard input, only touch-screen input</span>
+					</span>
 				</a>
 				<a id="pointing_game" class="itemLink" href="https://nicknameGrape.github.io/pointing_game/">
 					<img class="icon" src="pointing_game.png"/>
 					<span>Pointing Game</span>
+					<span class="usage">Select some word sets and start a pointing game.<br>
+						Tap the picture that matches the word.<br>
+						Faster answers get more points but you only get three chances.
+					</span>
 				</a>
 				<a id="scrambled_sentences" class="itemLink" href="https://nicknameGrape.github.io/scrambled_sentences/">
 					<img class="icon" src="scrambled_sentences.png"/>
 					<span>Scrambled Sentences</span>
+					<span class="usage">Translation and reading practice using textbook scripts.<br>
+						I am currently teaching with the New Horizon textbook series so the scripts will be from those books.
+					</span>
 				</a>
 				<a id="draw_with_shapes" class="itemLink" href="https://nicknameGrape.github.io/draw_with_shapes/">
 					<img class="icon" src="draw_with_shapes.png"/>
 					<span>Draw with Shapes</span>
+					<span class="usage">Draw using simple shapes and colors.<br>
+						Choose a shape and color, then place the shape using anchor points. (Look carefully at the shape icons to see where the anchor points are located.)<br>
+						The "anchor points" system is not very intuitive for students in my experience, but once they get the hang of it, it's fun.<br>
+						You can "turn off the lights" to make your drawing into a silhouette quiz.
+					</span>
 				</a>
 		</div>
 	</body>
