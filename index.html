@@ -10,7 +10,14 @@ body {
 	overflow: auto;
 }
 #splash {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	padding-left: 20px;
+}
+#feedback {
+	font-size: 12pt;
+	padding: 20px;
 }
 #hub {
 	display: flex;
@@ -71,7 +78,13 @@ body {
 		gtag('config', 'G-C5MPB2T6KH');
 	</script>
 	<body>
-		<h2 id="splash">Classroom Tools for ALTs</h2>
+		<div id="splash">
+			<h2>Classroom Tools for ALTs</h2>
+			<span id="feedback">Your suggestions are welcome!<br>Please use the
+				<a href="https://forms.gle/9w1qv62WLhgi8yk48">Feedback Form</a>
+				.
+			</span>
+		</div>
 		<div id="hub">
 				<a id="date" class="itemLink" href="https://nicknameGrape.github.io/date/">
 					<img class="icon" src="date_time.png"/>
