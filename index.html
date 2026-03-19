@@ -32,6 +32,10 @@ body {
 	padding-left: 30px;
 	white-space: pre-line;
 }
+.warning {
+	background: orange;
+	color: purple;
+}
 .icon {
 	height: 8vh;
 	margin: .5vh;
@@ -101,7 +105,7 @@ body {
 		<div id="hub">
 				<a id="date" class="itemLink" href="https://nicknameGrape.github.io/date/">
 					<img class="icon" src="date_time.png"/>
-					<span class="linkName">Current Time, Date and Weather*</span>
+					<span class="linkName">Current Time, Date and Weather<span style="font-size: revert;">*</span></span>
 					<span class="usage">At the start of the lesson, display the current time and date.
 					*Weather must be selected manually :)</span>
 				</a>
@@ -109,7 +113,7 @@ body {
 					<img class="icon" src="time_stopwatch_bomb.png"/>
 					<span class="linkName">Timer/Stopwatch/Time Bomb</span>
 					<span class="usage">The "Time Bomb" is a random-length timer for games like "Hot Potato" or "Musical Chairs".
-						<span style="background: orange">Caution: the alarm is rather loud!</span>
+						<span class="warning">Caution: the alarm is rather loud!</span>
 					</span>
 				</a>
 				<a id="lottery" class="itemLink" href="https://nicknameGrape.github.io/lottery/">
@@ -144,10 +148,10 @@ body {
 				<a id="draw_with_shapes" class="itemLink" href="https://nicknameGrape.github.io/draw_with_shapes/">
 					<img class="icon" src="draw_with_shapes.png"/>
 					<span class="linkName">Draw with Shapes</span>
-					<span class="usage">
-						Draw using simple shapes and colors.
-						Choose a shape and color, then place the shape using anchor points (Look carefully at the shape icons to see where the anchor points are located).
-						The "anchor points" system is not very intuitive for students in my experience, but once they get the hang of it, it's fun.
+					<span class="usage">Draw using simple shapes and colors.
+						Choose a shape and color, then place the shape using anchor points.
+						<em>Hint: Look carefully at the shape icons to see where the anchor points are located</em>
+						<span class="warning">The "anchor points" system is not very intuitive for students in my experience.</span>
 						You can "turn off the lights" to make your drawing into a silhouette quiz.
 					</span>
 				</a>
@@ -157,7 +161,7 @@ body {
 					<span class="usage">Start spelling one of 500+ common English words (nouns).
 						The spelling will autocomplete and display a picture.
 						Feel free to download and print the reading practice cards (mini picture dictionaries).
-						<span style="background: orange; color: purple">Note: Does not accept keyboard input, only touch-screen input</span>
+						<span class="warning">Note: Does not accept keyboard input, only touch-screen input</span>
 					</span>
 				</a>
 				<a id="back_room" class="itemLink" href="https://nicknameGrape.github.io/">
